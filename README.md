@@ -1,1 +1,1 @@
-# soccer-stats
+# yelp-comparator
