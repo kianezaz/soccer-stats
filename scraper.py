@@ -27,3 +27,5 @@ def scrape_for(query, location):
     images = soup.find_all("img", class_="css-xlzvdl")
     for i in range(len(images)):
         images[i] = images[i]["src"]
+
+    return (prices, stars, images)
