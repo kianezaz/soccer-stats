@@ -1,8 +1,11 @@
 import sys
 import traceback
+import webbrowser
+import os
 
 from scraper import scrape_for
 from convert import avg_price, avg_rating
+from generate import generate
 
 if __name__ == "__main__":
     print("Welcome to the location comparator app! Please enter the item you'd like to compare:\n")
@@ -55,3 +58,9 @@ if __name__ == "__main__":
         print("and {} is higher rated!".format(higher_rating))
     else:
         print("and their average ratings are equal!")
+
+    generate(item, [
+        {"location": location1, "rating": location1_avg_rating, "price": location1_avg_price, "images": images1},
+        {"location": location2, "rating": location2_avg_rating, "price": location2_avg_price, "images": images2}
+    ])
+    webbrowser.open("file://" + os.path.realpath("out.html"))
