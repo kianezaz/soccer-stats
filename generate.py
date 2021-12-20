@@ -9,18 +9,18 @@ HTML_FORMAT = """
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-	<h1>Yelp Comparator for {}</h1>
-    <div>{}</div>
+	<h1 id="title">Yelp Comparator for {}</h1>
+    <div id="board">{}</div>
   </body>
 </html>
 """
 
 ITEM_FORMAT = """
-<div>
+<div class="slide">
     <h2>{location}</h2>
     <div><strong>Average rating: </strong>{rating}</div>
     <div><strong>Average price: </strong>{price}</div>
-    <div>{images}</div>
+    <div class="images-container">{images}</div>
 </div>
 """
 

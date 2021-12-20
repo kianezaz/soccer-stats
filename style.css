@@ -1,0 +1,28 @@
+#title {
+    text-align: center;
+}
+
+#board {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.slide {
+    width: calc(50% - 6px - 2vw);
+    padding: 1vw;
+    text-align: center;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45vw;
+    justify-content: center;
+}
+
+.images-container img {
+    max-width: 15vw;
+    max-height: 15vh;
+    margin: 1px;
+}
